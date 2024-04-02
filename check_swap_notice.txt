@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------------
+Notice d'utilisation - Script check_swap.sh
+-------------------------------------------------------------------------------
+
+Description:
+Le script check_swap.sh est un utilitaire en ligne de commande conçu pour
+surveiller l'utilisation de l'espace swap sur un système Linux. Il permet de
+définir des seuils de warning et de critical pour l'utilisation de l'espace
+swap et renvoie des alertes en fonction de ces seuils.
+
+Utilisation:
+./check_swap.sh <seuil_warning> <seuil_critical>
+
+- <seuil_warning> : Seuil d'avertissement pour l'utilisation de l'espace swap
+                    (en GB ou MB).
+- <seuil_critical> : Seuil critique pour l'utilisation de l'espace swap
+                     (en GB ou MB).
+
+Exemple d'utilisation:
+./check_swap.sh 200MB 2GB
+
+Options:
+- -h, --help : Affiche les instructions d'utilisation détaillées.
+
+Instructions d'utilisation détaillées:
+Pour afficher les instructions d'utilisation détaillées, exécutez le script
+avec l'option -h ou --help.
+
+./check_swap.sh -h
+
+Fonctionnalités:
+- Vérification de l'utilisation du swap : Le script utilise les commandes
+  free et awk pour récupérer les informations sur l'utilisation actuelle de
+  l'espace swap.
+- Conversion des seuils : Convertit les seuils de MB en GB et vice versa selon
+  les besoins.
+- Affichage des alertes : Renvoie des messages Nagios avec les codes de sortie
+  appropriés (OK, WARNING, CRITICAL) en fonction de l'utilisation actuelle de
+  l'espace swap par rapport aux seuils définis.
+
+Prérequis:
+- Ce script est conçu pour être exécuté sur un système Linux.
+- Il nécessite les commandes free, awk et bc pour fonctionner correctement.
+
+-------------------------------------------------------------------------------
