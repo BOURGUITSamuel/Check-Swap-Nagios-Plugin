@@ -39,3 +39,31 @@ Prérequis:
 - Il nécessite les commandes free, awk et bc pour fonctionner correctement.
 
 -------------------------------------------------------------------------------
+
+# Configuration de la commande pour exécuter le script de vérification de l'utilisation de l'espace swap
+
+define command {
+    command_name    check_swap_usage
+    command_line    /chemin_vers_le_script/check_swap.bash $ARG1$ $ARG2$
+}
+
+# Configuration du service pour surveiller l'utilisation de l'espace swap avec Nagios
+
+define service {
+    use                     generic-service
+    host_name               hostname         ; Remplacer "hostname" par le nom de l'hôte où le script est exécuté
+    service_description     Swap Usage
+    check_command           check_swap_usage!$ARG1$!$ARG2$
+}
+
+# Description des arguments :
+#   - $ARG1$ : Seuil de WARNING (en GB ou MB).
+#   - $ARG2$ : Seuil de CRITICAL (en GB ou MB).
+
+# Exemple d'utilisation :
+# Pour surveiller l'utilisation de l'espace swap avec un seuil WARNING de 200MB et un seuil CRITICAL de 2GB :
+# 1. Utilisez "200MB" comme $ARG1$
+# 2. Utilisez "2GB" comme $ARG2$
+
+# Assurez-vous que le script check_swap_usage.sh est correctement placé et exécutable sur l'hôte Nagios.
+
