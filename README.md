@@ -28,7 +28,7 @@ L'installation de la commande "bc" est requise
 
 ## Running the tests
 
-Le programme a été testé sur l'OS Debian 64bits.
+Le programme a été testé sur l'OS Debian 64bits
 
 ## Versioning
 
