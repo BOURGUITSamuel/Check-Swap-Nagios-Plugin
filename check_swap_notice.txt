@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
-Notice d'utilisation - Script check_swap.sh
+Notice d'utilisation - Script check_swap.bash
 -------------------------------------------------------------------------------
 
 Description:
-Le script check_swap.sh est un utilitaire en ligne de commande conçu pour
+Le script check_swap.bash est un utilitaire en ligne de commande conçu pour
 surveiller l'utilisation de l'espace swap sur un système Linux. Il permet de
 définir des seuils de warning et de critical pour l'utilisation de l'espace
 swap et renvoie des alertes en fonction de ces seuils.
 
 Utilisation:
-./check_swap.sh <seuil_warning> <seuil_critical>
+./check_swap.bash <seuil_warning> <seuil_critical>
 
 - <seuil_warning> : Seuil d'avertissement pour l'utilisation de l'espace swap
                     (en GB ou MB).
@@ -17,7 +17,7 @@ Utilisation:
                      (en GB ou MB).
 
 Exemple d'utilisation:
-./check_swap.sh 200MB 2GB
+./check_swap.bash 200MB 2GB
 
 Options:
 - -h, --help : Affiche les instructions d'utilisation détaillées.
@@ -26,7 +26,7 @@ Instructions d'utilisation détaillées:
 Pour afficher les instructions d'utilisation détaillées, exécutez le script
 avec l'option -h ou --help.
 
-./check_swap.sh -h
+./check_swap.bash -h
 
 Fonctionnalités:
 - Vérification de l'utilisation du swap : Le script utilise les commandes
