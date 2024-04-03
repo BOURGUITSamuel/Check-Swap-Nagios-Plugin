@@ -19,12 +19,8 @@ Utilisation:
 Exemple d'utilisation:
 ./check_swap.bash 200MB 2GB
 
-Options:
-- -h, --help : Affiche les instructions d'utilisation détaillées.
-
 Instructions d'utilisation détaillées:
-Pour afficher les instructions d'utilisation détaillées, exécutez le script
-avec l'option -h ou --help.
+Si le script est appelé sans arguments, la fonction "usage_instructionss" est activée pour expliquer à l'utilisateur le fonctionnement du plugin.
 
 ./check_swap.bash -h
 
