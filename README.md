@@ -8,7 +8,7 @@ PLugin nagios permettant de vérifier la mémoire Swap d'un système d'exploitat
 
 ## Getting Started
 
-Vous pouvez utiliser ce programme afin de superviser la mémoire Swap de vos serveurs via l'outil de supervsion Nagios
+Vous pouvez utiliser ce programme afin de superviser la mémoire Swap de vos serveurs via l'outil de supervision Nagios
 
 ### Prerequisites
 
