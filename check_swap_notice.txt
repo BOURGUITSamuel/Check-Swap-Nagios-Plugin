@@ -65,5 +65,5 @@ define service {
 # 1. Utilisez "200MB" comme $ARG1$
 # 2. Utilisez "2GB" comme $ARG2$
 
-# Assurez-vous que le script check_swap_usage.sh est correctement placé et exécutable sur l'hôte Nagios.
+# Assurez-vous que le script check_swap.bash est correctement placé et exécutable sur l'hôte Nagios.
 
