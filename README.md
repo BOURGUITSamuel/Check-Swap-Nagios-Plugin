@@ -1,22 +1,22 @@
 # Check-Swap-Nagios-Plugin
 
-Nagios plugin to check Linux Swap
+Nagios plugin to check Linux Swap.
 
 # check_swap.bash
 
-PLugin nagios permettant de vérifier la mémoire Swap d'un système d'exploitation Linux
+PLugin nagios permettant de vérifier la mémoire Swap d'un système d'exploitation Linux.
 
 ## Getting Started
 
-Vous pouvez utiliser ce programme afin de superviser la mémoire Swap de vos serveurs via l'outil de supervision Nagios
+Vous pouvez utiliser ce programme afin de superviser la mémoire Swap de vos serveurs via l'outil de supervision Nagios.
 
 ### Prerequisites
 
 L'utilisation du programme nécessite l'acquisition d'un système d'exploitation Linux : Debian / CentOS / Ubuntu...
 
-Le programme a été conçu avec le language Bash
+Le programme a été conçu avec le language Bash.
 
-L'installation de la commande "bc" est requise
+L'installation de la commande "bc" est requise.
 
 ## Installing & Using
 
@@ -28,7 +28,7 @@ L'installation de la commande "bc" est requise
 
 ## Running the tests
 
-Le programme a été testé sur l'OS Debian 64bits
+Le programme a été testé sur l'OS Debian 64bits.
 
 ## Versioning
 
