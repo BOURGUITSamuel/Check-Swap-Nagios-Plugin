@@ -33,6 +33,8 @@ Fonctionnalités:
 - Affichage des alertes : Renvoie des messages Nagios avec les codes de sortie
   appropriés (OK, WARNING, CRITICAL) en fonction de l'utilisation actuelle de
   l'espace swap par rapport aux seuils définis.
+- Affiche l'aide sur la manière d'utiliser le script si le nombre d'arguments
+  est incorrect ou bien en utlisant l'option -h / -help.
 
 Prérequis:
 - Ce script est conçu pour être exécuté sur un système Linux.
